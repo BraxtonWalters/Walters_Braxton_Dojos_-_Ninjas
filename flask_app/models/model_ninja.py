@@ -39,6 +39,7 @@ class Ninja:
         results = connectToMySQL(DATABASE).query_db(query, data)
         return results
     
+    # get one
     @classmethod
     def get_user(cls, data):
         query = """SELECT * 
